@@ -290,6 +290,7 @@ body {
 }
 
 .profileCard .imgBx img {
+    object-fit: cover;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -797,6 +798,7 @@ body {
     height: 150px;
     width: 100%;
     border-radius: 16px 16px 0 0;
+    object-fit: cover;
 }
 
 .blog .card .content {
