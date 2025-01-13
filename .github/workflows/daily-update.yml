@@ -14,9 +14,9 @@ jobs:
 
       - name: Update code
         run: |
-          echo "Hello, world!" >> update.txt
-          git config --global user.name "Your Name"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "thamatis"
+          git config --global user.email "thamatis1@gmail.com"
+          echo "Update content $(date)" >> update.txt
           git add .
-          git commit -m "Daily update"
+          git commit -m "Daily update $(date)"
           git push
