@@ -20,6 +20,6 @@ jobs:
           git add .
           git commit -m "Daily update $(date)"
           git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }} \
-            --force \
-            --quiet \
-            --token ${{ secrets.GITHUB_TOKEN }}
+            --force --quiet
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
